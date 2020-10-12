@@ -58,14 +58,29 @@
           <div class="content-box">
             <div>
               <dv-border-box-12>
-                <bottomLeft />
+                <centerLeft2 />
               </dv-border-box-12>
             </div>
+            <!-- 中间 -->
+            <div>
+              <center />
+            </div>
+            <!-- 中间 -->
             <div>
               <dv-border-box-13>
-                <bottomRight />
+                <centerRight2 />
               </dv-border-box-13>
             </div>
+          </div>
+
+          <!-- 第四行数据 -->
+          <div class="bototm-box">
+            <dv-border-box-13>
+              <bottomLeft />
+            </dv-border-box-13>
+            <dv-border-box-12>
+              <bottomRight />
+            </dv-border-box-12>
           </div>
         </div>
       </div>
@@ -74,10 +89,13 @@
 </template>
 
 <script>
-import { formatTime } from '../utils/index.js'
+import { formatTime } from '@/utils/index.js'
 import { getTitle } from '@/api/data.js'
-import bottomLeft from "./views/bottomLeft";
-import bottomRight from "./views/bottomRight";
+import centerLeft2 from "./centerLeft2";
+import centerRight2 from "./centerRight2";
+import center from "./center";
+import bottomLeft from "./bottomLeft";
+import bottomRight from "./bottomRight";
 export default {
   data () {
     return {
@@ -89,6 +107,9 @@ export default {
     };
   },
   components: {
+    centerLeft2,
+    centerRight2,
+    // center,
     bottomLeft,
     bottomRight
   },
@@ -119,5 +140,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../assets/scss/index.scss';
+@import '../../assets/scss/index.scss';
 </style>

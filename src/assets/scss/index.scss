@@ -6,7 +6,7 @@
 
   .bg {
     padding: 0.2rem 0.2rem 0 0.2rem;
-    background-image: url("../assets/pageBg.png");
+    background-image: url("../assets/pageBg.png");  //需要改变
     background-size: cover;
     background-position: center center;
   }
@@ -94,7 +94,8 @@
       //下方区域的布局
       .content-box {
         display: grid;
-        grid-template-columns: 5fr 5fr 5fr;
+        grid-template-columns: repeat(2, 50%);
+        // grid-template-columns: 5fr 5fr 5fr;
       }
 
       // 底部数据
