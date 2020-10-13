@@ -45,14 +45,14 @@ $font-sizes: (
 .d-flex {
   display: flex;
 }
-.flex-column {
-  flex-direction: column;
+.flex-column {  
+  flex-direction: column;   //设置主轴的排列方向，规定了flex-start 和 flex-end的位置
 }
 .flex-wrap {
-  flex-wrap: wrap;
+  flex-wrap: wrap;  //换行，主轴方向空间不足换行 
 }
 .flex-nowrap {
-  flex-wrap: nowrap;
+  flex-wrap: nowrap; //不换行，主轴方向空间不足默认压缩伸缩项目
 }
 $flex-jc: (
   start: flex-start,
